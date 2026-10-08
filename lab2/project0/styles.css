@@ -1,0 +1,197 @@
+/* --- Скидання стилів та базові налаштування --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-radius: 8px;
+}
+
+.center {
+  align-self: center;
+}
+
+.flow-right {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title {
+  flex: none;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.controls {
+  flex: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+.controls span span {
+  font-weight: 700;
+  color: #353a45;
+}
+
+.button {
+  flex: none;
+  padding: 10px 20px;
+}
+
+.button.center {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 12px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.button.center:hover {
+  background-color: #1d4ed8;
+}
+
+.button.center:active {
+  transform: scale(0.98);
+}
+
+.todo-form-container {
+  display: none;
+  margin-bottom: 20px;
+  padding: 18px;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.todo-form-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.todo-form-group input[type="text"] {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todo-form-group input[type="text"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+}
+
+.todo-form-group button {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#submit-todo-btn {
+  background-color: #22c55e;
+  color: #ffffff;
+}
+
+#submit-todo-btn:hover {
+  background-color: #16a34a;
+}
+
+#cancel-todo-btn {
+  background-color: #e2e8f0;
+  color: #475569;
+}
+
+#cancel-todo-btn:hover {
+  background-color: #cbd5e1;
+}
+
+.todo-list {
+  flex: 1 1 0;
+  margin-top: 20px;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.todo-container:last-child {
+  border-bottom: none;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 16px;
+  color: #334155;
+  word-break: break-word;
+}
+
+.todo-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.todo-delete {
+  margin-left: auto;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #ef4444;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.todo-delete:hover {
+  background-color: #dc2626;
+}
